@@ -23,5 +23,10 @@ namespace SistemaInventario2
             inv.Show();
             this.Hide();
         }
+
+        private void toolStripDropDownButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
