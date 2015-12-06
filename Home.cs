@@ -17,16 +17,16 @@ namespace SistemaInventario2
             InitializeComponent();
         }
 
-        private void btnInventario_Click(object sender, EventArgs e)
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Inventarios inv = new Inventarios();
-            inv.Show();
-            this.Hide();
+            ProductosTable pTable = new ProductosTable();
+            pTable.Show();
         }
 
-        private void toolStripDropDownButton1_Click(object sender, EventArgs e)
+        private void ajustesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            AjustesTable ajusteTable = new AjustesTable();
+            ajusteTable.Show();
         }
     }
 }

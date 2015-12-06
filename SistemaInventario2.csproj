@@ -45,6 +45,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AjusteBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjusteBusqueda.Designer.cs">
+      <DependentUpon>AjusteBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjustesTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjustesTable.Designer.cs">
+      <DependentUpon>AjustesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusquedaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusquedaProducto.Designer.cs">
+      <DependentUpon>BusquedaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB2DataSet.cs">
+      <DependentUpon>DB2DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DB2DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -62,22 +84,31 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Inventarios.cs">
+    <Compile Include="ProductosTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Inventarios.Designer.cs">
-      <DependentUpon>Inventarios.cs</DependentUpon>
+    <Compile Include="ProductosTable.Designer.cs">
+      <DependentUpon>ProductosTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AjusteBusqueda.resx">
+      <DependentUpon>AjusteBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjustesTable.resx">
+      <DependentUpon>AjustesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusquedaProducto.resx">
+      <DependentUpon>BusquedaProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Inventarios.resx">
-      <DependentUpon>Inventarios.cs</DependentUpon>
+    <EmbeddedResource Include="ProductosTable.resx">
+      <DependentUpon>ProductosTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
