@@ -49,8 +49,8 @@
             this.vW_PRODUCTOSTableAdapter = new SistemaInventario2.DB2DataSetTableAdapters.VW_PRODUCTOSTableAdapter();
             this.tableAdapterManager = new SistemaInventario2.DB2DataSetTableAdapters.TableAdapterManager();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.vW_PRODUCTOSDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vW_PRODUCTOSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dB2DataSet)).BeginInit();
@@ -60,6 +60,7 @@
             // vW_PRODUCTOSDataGridView
             // 
             this.vW_PRODUCTOSDataGridView.AutoGenerateColumns = false;
+            this.vW_PRODUCTOSDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.vW_PRODUCTOSDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.vW_PRODUCTOSDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -79,6 +80,7 @@
             this.vW_PRODUCTOSDataGridView.DataSource = this.vW_PRODUCTOSBindingSource;
             this.vW_PRODUCTOSDataGridView.Location = new System.Drawing.Point(12, 12);
             this.vW_PRODUCTOSDataGridView.Name = "vW_PRODUCTOSDataGridView";
+            this.vW_PRODUCTOSDataGridView.ReadOnly = true;
             this.vW_PRODUCTOSDataGridView.RowHeadersWidth = 40;
             this.vW_PRODUCTOSDataGridView.Size = new System.Drawing.Size(946, 403);
             this.vW_PRODUCTOSDataGridView.TabIndex = 1;
@@ -88,84 +90,112 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "CODIGO";
             this.dataGridViewTextBoxColumn1.HeaderText = "CODIGO";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 74;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "MARCAS_ID";
             this.dataGridViewTextBoxColumn2.HeaderText = "MARCAS_ID";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 94;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "NOMBRE";
             this.dataGridViewTextBoxColumn3.HeaderText = "NOMBRE";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 79;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "COSTO";
             this.dataGridViewTextBoxColumn4.HeaderText = "COSTO";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 69;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "CATEGORIA";
             this.dataGridViewTextBoxColumn5.HeaderText = "CATEGORIA";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 94;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "EXISTENCIA";
             this.dataGridViewTextBoxColumn6.HeaderText = "EXISTENCIA";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 95;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "PRECIO";
             this.dataGridViewTextBoxColumn7.HeaderText = "PRECIO";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 72;
             // 
             // dataGridViewTextBoxColumn8
             // 
             this.dataGridViewTextBoxColumn8.DataPropertyName = "ESTADO";
             this.dataGridViewTextBoxColumn8.HeaderText = "ESTADO";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 76;
             // 
             // dataGridViewTextBoxColumn9
             // 
             this.dataGridViewTextBoxColumn9.DataPropertyName = "EXISTENCIA_MINIMA";
             this.dataGridViewTextBoxColumn9.HeaderText = "EXISTENCIA_MINIMA";
             this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            this.dataGridViewTextBoxColumn9.Width = 140;
             // 
             // dataGridViewTextBoxColumn10
             // 
             this.dataGridViewTextBoxColumn10.DataPropertyName = "EXISTENCIA_MAXIMA";
             this.dataGridViewTextBoxColumn10.HeaderText = "EXISTENCIA_MAXIMA";
             this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 143;
             // 
             // dataGridViewTextBoxColumn11
             // 
             this.dataGridViewTextBoxColumn11.DataPropertyName = "FECHA_CREACION";
             this.dataGridViewTextBoxColumn11.HeaderText = "FECHA_CREACION";
             this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Width = 128;
             // 
             // dataGridViewTextBoxColumn12
             // 
             this.dataGridViewTextBoxColumn12.DataPropertyName = "FECHA_ACTUALIZACION";
             this.dataGridViewTextBoxColumn12.HeaderText = "FECHA_ACTUALIZACION";
             this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.ReadOnly = true;
+            this.dataGridViewTextBoxColumn12.Width = 158;
             // 
             // dataGridViewTextBoxColumn13
             // 
             this.dataGridViewTextBoxColumn13.DataPropertyName = "USUARIO_CREACION";
             this.dataGridViewTextBoxColumn13.HeaderText = "USUARIO_CREACION";
             this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            this.dataGridViewTextBoxColumn13.Width = 142;
             // 
             // dataGridViewTextBoxColumn14
             // 
             this.dataGridViewTextBoxColumn14.DataPropertyName = "USUARIO_ACTUALIZACION";
             this.dataGridViewTextBoxColumn14.HeaderText = "USUARIO_ACTUALIZACION";
             this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            this.dataGridViewTextBoxColumn14.Width = 172;
             // 
             // vW_PRODUCTOSBindingSource
             // 
@@ -216,15 +246,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar Producto";
             // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(6, 45);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(176, 20);
-            this.txtCodigo.TabIndex = 0;
-            this.txtCodigo.Text = "Codigo";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.PowderBlue;
@@ -237,6 +258,16 @@
             this.button1.Text = "Buscar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigo.Location = new System.Drawing.Point(6, 45);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(176, 20);
+            this.txtCodigo.TabIndex = 0;
+            this.txtCodigo.Text = "Codigo";
+            this.txtCodigo.Click += new System.EventHandler(this.txtCodigo_Click);
             // 
             // ProductosTable
             // 

@@ -72,7 +72,7 @@
             this.toolStripDropDownButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(953, 26);
+            this.toolStrip1.Size = new System.Drawing.Size(953, 25);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -83,23 +83,23 @@
             this.toolStripDropDownButton1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.holaToolStripMenuItem,
             this.cerrarSistemaToolStripMenuItem});
-            this.toolStripDropDownButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.toolStripDropDownButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripDropDownButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton1.Name = "toolStripDropDownButton1";
             this.toolStripDropDownButton1.ShowDropDownArrow = false;
-            this.toolStripDropDownButton1.Size = new System.Drawing.Size(110, 23);
+            this.toolStripDropDownButton1.Size = new System.Drawing.Size(99, 22);
             this.toolStripDropDownButton1.Text = "Administrador";
             // 
             // holaToolStripMenuItem
             // 
             this.holaToolStripMenuItem.Name = "holaToolStripMenuItem";
-            this.holaToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.holaToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.holaToolStripMenuItem.Text = "Cerrar Sesion";
             // 
             // cerrarSistemaToolStripMenuItem
             // 
             this.cerrarSistemaToolStripMenuItem.Name = "cerrarSistemaToolStripMenuItem";
-            this.cerrarSistemaToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.cerrarSistemaToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.cerrarSistemaToolStripMenuItem.Text = "Cerrar Sistema";
             // 
             // toolStripDropDownButton2
@@ -108,12 +108,12 @@
             this.toolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ajustesToolStripMenuItem});
-            this.toolStripDropDownButton2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.toolStripDropDownButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
             this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
             this.toolStripDropDownButton2.ShowDropDownArrow = false;
-            this.toolStripDropDownButton2.Size = new System.Drawing.Size(114, 23);
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(105, 22);
             this.toolStripDropDownButton2.Text = "Mantenimiento";
             // 
             // ajustesToolStripMenuItem
@@ -122,44 +122,44 @@
             this.entradaToolStripMenuItem,
             this.salidaToolStripMenuItem});
             this.ajustesToolStripMenuItem.Name = "ajustesToolStripMenuItem";
-            this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
+            this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.ajustesToolStripMenuItem.Text = "Ajustes";
             // 
             // entradaToolStripMenuItem
             // 
             this.entradaToolStripMenuItem.Name = "entradaToolStripMenuItem";
-            this.entradaToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
+            this.entradaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.entradaToolStripMenuItem.Text = "Entrada";
             // 
             // salidaToolStripMenuItem
             // 
             this.salidaToolStripMenuItem.Name = "salidaToolStripMenuItem";
-            this.salidaToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
+            this.salidaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.salidaToolStripMenuItem.Text = "Salida";
             // 
             // toolStripDropDownButton3
             // 
             this.toolStripDropDownButton3.AutoToolTip = false;
             this.toolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.toolStripDropDownButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripDropDownButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton3.Image")));
             this.toolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton3.Name = "toolStripDropDownButton3";
             this.toolStripDropDownButton3.ShowDropDownArrow = false;
-            this.toolStripDropDownButton3.Size = new System.Drawing.Size(73, 23);
-            this.toolStripDropDownButton3.Text = "Compras";
+            this.toolStripDropDownButton3.Size = new System.Drawing.Size(114, 22);
+            this.toolStripDropDownButton3.Text = "Ingresar Compra";
             // 
             // toolStripDropDownButton4
             // 
             this.toolStripDropDownButton4.AutoToolTip = false;
             this.toolStripDropDownButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripDropDownButton4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.toolStripDropDownButton4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripDropDownButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton4.Image")));
             this.toolStripDropDownButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton4.Name = "toolStripDropDownButton4";
             this.toolStripDropDownButton4.ShowDropDownArrow = false;
-            this.toolStripDropDownButton4.Size = new System.Drawing.Size(56, 23);
-            this.toolStripDropDownButton4.Text = "Ventas";
+            this.toolStripDropDownButton4.Size = new System.Drawing.Size(100, 22);
+            this.toolStripDropDownButton4.Text = "Ingresar Venta";
             // 
             // toolStripDropDownButton5
             // 
@@ -168,18 +168,18 @@
             this.toolStripDropDownButton5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productosToolStripMenuItem,
             this.otrosRegistrosToolStripMenuItem});
-            this.toolStripDropDownButton5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.toolStripDropDownButton5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripDropDownButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton5.Image")));
             this.toolStripDropDownButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton5.Name = "toolStripDropDownButton5";
             this.toolStripDropDownButton5.ShowDropDownArrow = false;
-            this.toolStripDropDownButton5.Size = new System.Drawing.Size(87, 23);
+            this.toolStripDropDownButton5.Size = new System.Drawing.Size(80, 22);
             this.toolStripDropDownButton5.Text = "Inventarios";
             // 
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.productosToolStripMenuItem.Text = "Productos";
             this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
             // 
@@ -193,7 +193,7 @@
             this.marcasToolStripMenuItem,
             this.proveedoresToolStripMenuItem});
             this.otrosRegistrosToolStripMenuItem.Name = "otrosRegistrosToolStripMenuItem";
-            this.otrosRegistrosToolStripMenuItem.Size = new System.Drawing.Size(178, 24);
+            this.otrosRegistrosToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.otrosRegistrosToolStripMenuItem.Text = "Otros registros";
             // 
             // ajustesToolStripMenuItem1
@@ -201,71 +201,79 @@
             this.ajustesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.detallesDeAjustesToolStripMenuItem});
             this.ajustesToolStripMenuItem1.Name = "ajustesToolStripMenuItem1";
-            this.ajustesToolStripMenuItem1.Size = new System.Drawing.Size(164, 24);
+            this.ajustesToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.ajustesToolStripMenuItem1.Text = "Ajustes";
             this.ajustesToolStripMenuItem1.Click += new System.EventHandler(this.ajustesToolStripMenuItem1_Click);
             // 
             // detallesDeAjustesToolStripMenuItem
             // 
             this.detallesDeAjustesToolStripMenuItem.Name = "detallesDeAjustesToolStripMenuItem";
-            this.detallesDeAjustesToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.detallesDeAjustesToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.detallesDeAjustesToolStripMenuItem.Text = "Detalles de Ajustes";
+            this.detallesDeAjustesToolStripMenuItem.Click += new System.EventHandler(this.detallesDeAjustesToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
+            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // comprasToolStripMenuItem
             // 
             this.comprasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.detallesDeCompraToolStripMenuItem});
             this.comprasToolStripMenuItem.Name = "comprasToolStripMenuItem";
-            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.comprasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.comprasToolStripMenuItem.Text = "Compras";
+            this.comprasToolStripMenuItem.Click += new System.EventHandler(this.comprasToolStripMenuItem_Click);
             // 
             // detallesDeCompraToolStripMenuItem
             // 
             this.detallesDeCompraToolStripMenuItem.Name = "detallesDeCompraToolStripMenuItem";
-            this.detallesDeCompraToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.detallesDeCompraToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.detallesDeCompraToolStripMenuItem.Text = "Detalles de Compras";
+            this.detallesDeCompraToolStripMenuItem.Click += new System.EventHandler(this.detallesDeCompraToolStripMenuItem_Click);
             // 
             // facturasToolStripMenuItem
             // 
             this.facturasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.detallesDeFacturaToolStripMenuItem});
             this.facturasToolStripMenuItem.Name = "facturasToolStripMenuItem";
-            this.facturasToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.facturasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.facturasToolStripMenuItem.Text = "Facturas";
+            this.facturasToolStripMenuItem.Click += new System.EventHandler(this.facturasToolStripMenuItem_Click);
             // 
             // detallesDeFacturaToolStripMenuItem
             // 
             this.detallesDeFacturaToolStripMenuItem.Name = "detallesDeFacturaToolStripMenuItem";
-            this.detallesDeFacturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.detallesDeFacturaToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.detallesDeFacturaToolStripMenuItem.Text = "Detalles de Factura";
+            this.detallesDeFacturaToolStripMenuItem.Click += new System.EventHandler(this.detallesDeFacturaToolStripMenuItem_Click);
             // 
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
-            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.marcasToolStripMenuItem.Text = "Marcas";
+            this.marcasToolStripMenuItem.Click += new System.EventHandler(this.marcasToolStripMenuItem_Click);
             // 
             // proveedoresToolStripMenuItem
             // 
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
+            this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.AutoToolTip = false;
             this.toolStripLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripLabel1.Image")));
             this.toolStripLabel1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(166, 23);
+            this.toolStripLabel1.Size = new System.Drawing.Size(153, 22);
             this.toolStripLabel1.Text = "Resumen de Inventario";
             // 
             // toolStripDropDownButton6
@@ -276,30 +284,30 @@
             this.existenciaDeProductosToolStripMenuItem,
             this.puntoDeReordenToolStripMenuItem,
             this.ventasPorMesToolStripMenuItem});
-            this.toolStripDropDownButton6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.toolStripDropDownButton6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripDropDownButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton6.Image")));
             this.toolStripDropDownButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton6.Name = "toolStripDropDownButton6";
             this.toolStripDropDownButton6.ShowDropDownArrow = false;
-            this.toolStripDropDownButton6.Size = new System.Drawing.Size(73, 23);
+            this.toolStripDropDownButton6.Size = new System.Drawing.Size(66, 22);
             this.toolStripDropDownButton6.Text = "Reportes";
             // 
             // existenciaDeProductosToolStripMenuItem
             // 
             this.existenciaDeProductosToolStripMenuItem.Name = "existenciaDeProductosToolStripMenuItem";
-            this.existenciaDeProductosToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.existenciaDeProductosToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.existenciaDeProductosToolStripMenuItem.Text = "Existencia de Productos";
             // 
             // puntoDeReordenToolStripMenuItem
             // 
             this.puntoDeReordenToolStripMenuItem.Name = "puntoDeReordenToolStripMenuItem";
-            this.puntoDeReordenToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.puntoDeReordenToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.puntoDeReordenToolStripMenuItem.Text = "Punto de Reorden";
             // 
             // ventasPorMesToolStripMenuItem
             // 
             this.ventasPorMesToolStripMenuItem.Name = "ventasPorMesToolStripMenuItem";
-            this.ventasPorMesToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.ventasPorMesToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
             this.ventasPorMesToolStripMenuItem.Text = "Ventas por Mes";
             // 
             // Home

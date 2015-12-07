@@ -28,5 +28,53 @@ namespace SistemaInventario2
             AjustesTable ajusteTable = new AjustesTable();
             ajusteTable.Show();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tables.ClientesTable clienteTable = new Tables.ClientesTable();
+            clienteTable.Show();
+        }
+
+        private void comprasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tables.ComprasTable compraTable = new Tables.ComprasTable();
+            compraTable.Show();
+        }
+
+        private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tables.FacturasTable facturaTable = new Tables.FacturasTable();
+            facturaTable.Show();
+        }
+
+        private void marcasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tables.MarcasTable marcaTable = new Tables.MarcasTable();
+            marcaTable.Show();
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tables.ProveedoresTable proveedorTable = new Tables.ProveedoresTable();
+            proveedorTable.Show();
+        }
+
+        private void detallesDeAjustesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tables.Detalles.DetallesAjustesTable detalleAjusteTable = new Tables.Detalles.DetallesAjustesTable();
+            detalleAjusteTable.Show();
+        }
+
+        private void detallesDeCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tables.Detalles.DetallesComprasTable detalleCompraTable = new Tables.Detalles.DetallesComprasTable();
+            detalleCompraTable.Show();
+        }
+
+        private void detallesDeFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Tables.Detalles.DetallesFacturasTable detalleFacturaTable = new Tables.Detalles.DetallesFacturasTable();
+            detalleFacturaTable.Show();
+        }
     }
 }

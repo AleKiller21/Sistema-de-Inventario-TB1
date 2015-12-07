@@ -89,6 +89,7 @@
             // aJUSTESDataGridView
             // 
             this.aJUSTESDataGridView.AutoGenerateColumns = false;
+            this.aJUSTESDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.aJUSTESDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.aJUSTESDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -101,6 +102,7 @@
             this.aJUSTESDataGridView.DataSource = this.aJUSTESBindingSource;
             this.aJUSTESDataGridView.Location = new System.Drawing.Point(12, 12);
             this.aJUSTESDataGridView.Name = "aJUSTESDataGridView";
+            this.aJUSTESDataGridView.ReadOnly = true;
             this.aJUSTESDataGridView.Size = new System.Drawing.Size(745, 270);
             this.aJUSTESDataGridView.TabIndex = 1;
             // 
@@ -109,42 +111,56 @@
             this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
             this.dataGridViewTextBoxColumn1.HeaderText = "ID";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 43;
             // 
             // dataGridViewTextBoxColumn2
             // 
             this.dataGridViewTextBoxColumn2.DataPropertyName = "FECHA";
             this.dataGridViewTextBoxColumn2.HeaderText = "FECHA";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Width = 67;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.DataPropertyName = "TOTAL_PRODUCTO";
             this.dataGridViewTextBoxColumn3.HeaderText = "TOTAL_PRODUCTO";
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Width = 134;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "FECHA_CREACION";
             this.dataGridViewTextBoxColumn4.HeaderText = "FECHA_CREACION";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.Width = 128;
             // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "FECHA_ACTUALIZACION";
             this.dataGridViewTextBoxColumn5.HeaderText = "FECHA_ACTUALIZACION";
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Width = 158;
             // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "USUARIO_CREACION";
             this.dataGridViewTextBoxColumn6.HeaderText = "USUARIO_CREACION";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.Width = 142;
             // 
             // dataGridViewTextBoxColumn7
             // 
             this.dataGridViewTextBoxColumn7.DataPropertyName = "USUARIO_ACTUALIZACION";
             this.dataGridViewTextBoxColumn7.HeaderText = "USUARIO_ACTUALIZACION";
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 172;
             // 
             // btnBuscar
             // 
@@ -190,7 +206,8 @@
             this.Controls.Add(this.aJUSTESDataGridView);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "AjustesTable";
-            this.Text = "AjustesTable";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Ajustes";
             this.Load += new System.EventHandler(this.AjustesTable_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dB2DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aJUSTESBindingSource)).EndInit();

@@ -34,9 +34,11 @@
             // 
             // ajusteGridView1
             // 
+            this.ajusteGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.ajusteGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ajusteGridView1.Location = new System.Drawing.Point(12, 12);
             this.ajusteGridView1.Name = "ajusteGridView1";
+            this.ajusteGridView1.ReadOnly = true;
             this.ajusteGridView1.Size = new System.Drawing.Size(654, 236);
             this.ajusteGridView1.TabIndex = 0;
             // 
@@ -49,7 +51,8 @@
             this.Controls.Add(this.ajusteGridView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "AjusteBusqueda";
-            this.Text = "AjusteBusqueda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Ajuste";
             this.Load += new System.EventHandler(this.AjusteBusqueda_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ajusteGridView1)).EndInit();
             this.ResumeLayout(false);

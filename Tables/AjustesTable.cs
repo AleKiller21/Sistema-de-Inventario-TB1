@@ -36,14 +36,22 @@ namespace SistemaInventario2
         {
             if(txtID.Text == "")
             {
-                MessageBox.Show("Ingrese un id valido", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Ingrese un id valido.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
             else
             {
-                int id = Int32.Parse(txtID.Text);
-                AjusteBusqueda ajuste = new AjusteBusqueda(id);
-                ajuste.Show();
+                try
+                {
+                    int id = Int32.Parse(txtID.Text);
+                    AjusteBusqueda ajuste = new AjusteBusqueda(id);
+                    ajuste.Show();
+                }
+                catch (Exception)
+                {
+                    
+                    MessageBox.Show("Ingrese un id valido.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

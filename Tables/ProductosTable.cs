@@ -29,15 +29,28 @@ namespace SistemaInventario2
         {
             if(txtCodigo.Text == "")
             {
-                MessageBox.Show("Porfavor ingrese el codigo de un producto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Porfavor ingrese el codigo de un producto.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
             else
             {
-                int codigo = Int32.Parse(txtCodigo.Text);
-                BusquedaProducto busqueda = new BusquedaProducto(codigo);
-                busqueda.Show();
+                try
+                {
+                    int codigo = Int32.Parse(txtCodigo.Text);
+                    BusquedaProducto busqueda = new BusquedaProducto(codigo);
+                    busqueda.Show();
+                }
+                catch (Exception)
+                {
+                    
+                    MessageBox.Show("Ingrese un id valido.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
+        }
+
+        private void txtCodigo_Click(object sender, EventArgs e)
+        {
+            txtCodigo.Text = "";
         }
     }
 }

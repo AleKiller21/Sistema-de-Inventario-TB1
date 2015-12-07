@@ -45,22 +45,70 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AjusteBusqueda.cs">
+    <Compile Include="Busquedas\AjusteBusqueda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AjusteBusqueda.Designer.cs">
+    <Compile Include="Busquedas\AjusteBusqueda.Designer.cs">
       <DependentUpon>AjusteBusqueda.cs</DependentUpon>
     </Compile>
-    <Compile Include="AjustesTable.cs">
+    <Compile Include="Busquedas\BusquedaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AjustesTable.Designer.cs">
+    <Compile Include="Busquedas\BusquedaCliente.Designer.cs">
+      <DependentUpon>BusquedaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busquedas\BusquedaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\BusquedaCompra.Designer.cs">
+      <DependentUpon>BusquedaCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busquedas\BusquedaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\BusquedaFactura.Designer.cs">
+      <DependentUpon>BusquedaFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busquedas\BusquedaMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\BusquedaMarca.Designer.cs">
+      <DependentUpon>BusquedaMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busquedas\BusquedaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\BusquedaProveedor.Designer.cs">
+      <DependentUpon>BusquedaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busquedas\Detalles\BusquedaDetallesAjuste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Detalles\BusquedaDetallesAjuste.Designer.cs">
+      <DependentUpon>BusquedaDetallesAjuste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busquedas\Detalles\BusquedaDetallesCompras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Detalles\BusquedaDetallesCompras.Designer.cs">
+      <DependentUpon>BusquedaDetallesCompras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busquedas\Detalles\BusquedaDetallesFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busquedas\Detalles\BusquedaDetallesFactura.Designer.cs">
+      <DependentUpon>BusquedaDetallesFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\AjustesTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\AjustesTable.Designer.cs">
       <DependentUpon>AjustesTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="BusquedaProducto.cs">
+    <Compile Include="Busquedas\BusquedaProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BusquedaProducto.Designer.cs">
+    <Compile Include="Busquedas\BusquedaProducto.Designer.cs">
       <DependentUpon>BusquedaProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="DB2DataSet.cs">
@@ -84,21 +132,93 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductosTable.cs">
+    <Compile Include="Tables\ClientesTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProductosTable.Designer.cs">
+    <Compile Include="Tables\ClientesTable.Designer.cs">
+      <DependentUpon>ClientesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\ComprasTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\ComprasTable.Designer.cs">
+      <DependentUpon>ComprasTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\Detalles\DetallesAjustesTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\Detalles\DetallesAjustesTable.Designer.cs">
+      <DependentUpon>DetallesAjustesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\Detalles\DetallesComprasTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\Detalles\DetallesComprasTable.Designer.cs">
+      <DependentUpon>DetallesComprasTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\Detalles\DetallesFacturasTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\Detalles\DetallesFacturasTable.Designer.cs">
+      <DependentUpon>DetallesFacturasTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\FacturasTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\FacturasTable.Designer.cs">
+      <DependentUpon>FacturasTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\MarcasTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\MarcasTable.Designer.cs">
+      <DependentUpon>MarcasTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\ProductosTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\ProductosTable.Designer.cs">
       <DependentUpon>ProductosTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AjusteBusqueda.resx">
+    <Compile Include="Tables\ProveedoresTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tables\ProveedoresTable.Designer.cs">
+      <DependentUpon>ProveedoresTable.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Busquedas\AjusteBusqueda.resx">
       <DependentUpon>AjusteBusqueda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AjustesTable.resx">
+    <EmbeddedResource Include="Busquedas\BusquedaCliente.resx">
+      <DependentUpon>BusquedaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\BusquedaCompra.resx">
+      <DependentUpon>BusquedaCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\BusquedaFactura.resx">
+      <DependentUpon>BusquedaFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\BusquedaMarca.resx">
+      <DependentUpon>BusquedaMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\BusquedaProveedor.resx">
+      <DependentUpon>BusquedaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Detalles\BusquedaDetallesAjuste.resx">
+      <DependentUpon>BusquedaDetallesAjuste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Detalles\BusquedaDetallesCompras.resx">
+      <DependentUpon>BusquedaDetallesCompras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busquedas\Detalles\BusquedaDetallesFactura.resx">
+      <DependentUpon>BusquedaDetallesFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\AjustesTable.resx">
       <DependentUpon>AjustesTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BusquedaProducto.resx">
+    <EmbeddedResource Include="Busquedas\BusquedaProducto.resx">
       <DependentUpon>BusquedaProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
@@ -107,7 +227,28 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductosTable.resx">
+    <EmbeddedResource Include="Tables\ClientesTable.resx">
+      <DependentUpon>ClientesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\ComprasTable.resx">
+      <DependentUpon>ComprasTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\Detalles\DetallesAjustesTable.resx">
+      <DependentUpon>DetallesAjustesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\Detalles\DetallesComprasTable.resx">
+      <DependentUpon>DetallesComprasTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\Detalles\DetallesFacturasTable.resx">
+      <DependentUpon>DetallesFacturasTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\FacturasTable.resx">
+      <DependentUpon>FacturasTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\MarcasTable.resx">
+      <DependentUpon>MarcasTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tables\ProductosTable.resx">
       <DependentUpon>ProductosTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -119,6 +260,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tables\ProveedoresTable.resx">
+      <DependentUpon>ProveedoresTable.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DB2DataSet.xsc">
       <DependentUpon>DB2DataSet.xsd</DependentUpon>
     </None>
@@ -143,6 +287,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

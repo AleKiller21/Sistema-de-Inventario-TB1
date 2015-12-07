@@ -34,9 +34,11 @@
             // 
             // productoGridView1
             // 
+            this.productoGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.productoGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.productoGridView1.Location = new System.Drawing.Point(12, 12);
             this.productoGridView1.Name = "productoGridView1";
+            this.productoGridView1.ReadOnly = true;
             this.productoGridView1.Size = new System.Drawing.Size(672, 159);
             this.productoGridView1.TabIndex = 0;
             // 
@@ -49,7 +51,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "BusquedaProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BusquedaProducto";
+            this.Text = "Producto";
             this.Load += new System.EventHandler(this.BusquedaProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.productoGridView1)).EndInit();
             this.ResumeLayout(false);
