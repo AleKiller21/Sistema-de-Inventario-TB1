@@ -50,10 +50,11 @@
             this.txtClave.ForeColor = System.Drawing.Color.Black;
             this.txtClave.Location = new System.Drawing.Point(12, 110);
             this.txtClave.Name = "txtClave";
+            this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(277, 24);
             this.txtClave.TabIndex = 1;
-            this.txtClave.Text = "Clave";
             this.txtClave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtClave.UseSystemPasswordChar = true;
             // 
             // btnSesion
             // 
@@ -69,7 +70,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Snow;
+            this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(301, 242);
             this.Controls.Add(this.btnSesion);
             this.Controls.Add(this.txtClave);

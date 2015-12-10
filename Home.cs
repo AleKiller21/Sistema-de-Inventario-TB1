@@ -12,13 +12,16 @@ namespace SistemaInventario2
 {
     public partial class Home : Form
     {
-        public Home()
+        Form1 temp;
+        public Home(Form1 temp)
         {
             InitializeComponent();
+            this.temp = temp;
         }
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //MessageBox.Show("Usuario: " + ActiveUser.UserID + "; Password: " + ActiveUser.Password);
             ProductosTable pTable = new ProductosTable();
             pTable.Show();
         }
@@ -75,6 +78,17 @@ namespace SistemaInventario2
         {
             Tables.Detalles.DetallesFacturasTable detalleFacturaTable = new Tables.Detalles.DetallesFacturasTable();
             detalleFacturaTable.Show();
+        }
+
+        private void ingresarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NuevaCompra nCompra = new NuevaCompra();
+            nCompra.Show();
+        }
+
+        private void Home_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            temp.Close();
         }
     }
 }

@@ -32,5 +32,15 @@ namespace SistemaInventario2.Properties {
                 return ((string)(this["PROYECTOConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Database=PROYECTO;User ID=Alejandro;Server=localhost")]
+        public string PROYECTOConnectionString1 {
+            get {
+                return ((string)(this["PROYECTOConnectionString1"]));
+            }
+        }
     }
 }

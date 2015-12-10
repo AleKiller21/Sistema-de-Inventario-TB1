@@ -31,12 +31,15 @@ namespace SistemaInventario2
                     MessageBox.Show("Bienvenido " + txtUser.Text, "Usuario encontrado", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                     sesion = true;
+                    ActiveUser.UserID = row["NOMBRE"].ToString();
+                    ActiveUser.Password = row["CLAVE"].ToString();
+                    break;
                 }
             }
 
             if(sesion)
             {
-                Home home = new Home();
+                Home home = new Home(this);
                 home.Show();
                 this.Hide();
             }

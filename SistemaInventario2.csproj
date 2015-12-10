@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActiveUser.cs" />
     <Compile Include="Busquedas\AjusteBusqueda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +99,19 @@
     </Compile>
     <Compile Include="Busquedas\Detalles\BusquedaDetallesFactura.Designer.cs">
       <DependentUpon>BusquedaDetallesFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras.Designer.cs">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataManagement.cs" />
+    <Compile Include="NuevaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaCompra.Designer.cs">
+      <DependentUpon>NuevaCompra.cs</DependentUpon>
     </Compile>
     <Compile Include="Tables\AjustesTable.cs">
       <SubType>Form</SubType>
@@ -214,6 +228,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Busquedas\Detalles\BusquedaDetallesFactura.resx">
       <DependentUpon>BusquedaDetallesFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras.resx">
+      <DependentUpon>Compras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaCompra.resx">
+      <DependentUpon>NuevaCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tables\AjustesTable.resx">
       <DependentUpon>AjustesTable.cs</DependentUpon>
