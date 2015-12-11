@@ -1,6 +1,6 @@
 ﻿namespace SistemaInventario2
 {
-    partial class Compras
+    partial class Ventas
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnFinalizarVenta = new System.Windows.Forms.Button();
+            this.detallesGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAgregdarDetalle = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -38,11 +40,33 @@
             this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigoProducto = new System.Windows.Forms.TextBox();
-            this.detallesGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnFinalizarCompra = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.detallesGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnFinalizarVenta
+            // 
+            this.btnFinalizarVenta.BackColor = System.Drawing.Color.Crimson;
+            this.btnFinalizarVenta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFinalizarVenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnFinalizarVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinalizarVenta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinalizarVenta.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnFinalizarVenta.Location = new System.Drawing.Point(183, 442);
+            this.btnFinalizarVenta.Name = "btnFinalizarVenta";
+            this.btnFinalizarVenta.Size = new System.Drawing.Size(524, 64);
+            this.btnFinalizarVenta.TabIndex = 12;
+            this.btnFinalizarVenta.Text = "Finalizar Venta";
+            this.btnFinalizarVenta.UseVisualStyleBackColor = false;
+            this.btnFinalizarVenta.Click += new System.EventHandler(this.btnFinalizarVenta_Click);
+            // 
+            // detallesGridView1
+            // 
+            this.detallesGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.detallesGridView1.Location = new System.Drawing.Point(25, 227);
+            this.detallesGridView1.Name = "detallesGridView1";
+            this.detallesGridView1.Size = new System.Drawing.Size(840, 198);
+            this.detallesGridView1.TabIndex = 11;
             // 
             // groupBox1
             // 
@@ -57,23 +81,23 @@
             this.groupBox1.Controls.Add(this.txtCodigoProducto);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox1.Location = new System.Drawing.Point(12, 22);
+            this.groupBox1.Location = new System.Drawing.Point(19, 17);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(846, 191);
-            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles de Compra";
             // 
             // btnAgregdarDetalle
             // 
             this.btnAgregdarDetalle.BackColor = System.Drawing.Color.Gray;
-            this.btnAgregdarDetalle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
+            this.btnAgregdarDetalle.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnAgregdarDetalle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregdarDetalle.Location = new System.Drawing.Point(628, 37);
             this.btnAgregdarDetalle.Name = "btnAgregdarDetalle";
             this.btnAgregdarDetalle.Size = new System.Drawing.Size(139, 64);
             this.btnAgregdarDetalle.TabIndex = 8;
-            this.btnAgregdarDetalle.Text = "Agregar a pedido de compra";
+            this.btnAgregdarDetalle.Text = "Agregar a orden de venta";
             this.btnAgregdarDetalle.UseVisualStyleBackColor = false;
             this.btnAgregdarDetalle.Click += new System.EventHandler(this.btnAgregdarDetalle_Click);
             // 
@@ -152,64 +176,39 @@
             this.txtCodigoProducto.Size = new System.Drawing.Size(133, 21);
             this.txtCodigoProducto.TabIndex = 0;
             // 
-            // detallesGridView1
-            // 
-            this.detallesGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.detallesGridView1.Location = new System.Drawing.Point(18, 232);
-            this.detallesGridView1.Name = "detallesGridView1";
-            this.detallesGridView1.Size = new System.Drawing.Size(840, 198);
-            this.detallesGridView1.TabIndex = 4;
-            // 
-            // btnFinalizarCompra
-            // 
-            this.btnFinalizarCompra.BackColor = System.Drawing.Color.Crimson;
-            this.btnFinalizarCompra.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFinalizarCompra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
-            this.btnFinalizarCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFinalizarCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinalizarCompra.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnFinalizarCompra.Location = new System.Drawing.Point(176, 447);
-            this.btnFinalizarCompra.Name = "btnFinalizarCompra";
-            this.btnFinalizarCompra.Size = new System.Drawing.Size(524, 64);
-            this.btnFinalizarCompra.TabIndex = 9;
-            this.btnFinalizarCompra.Text = "Finalizar Compra";
-            this.btnFinalizarCompra.UseVisualStyleBackColor = false;
-            this.btnFinalizarCompra.Click += new System.EventHandler(this.btnFinalizarCompra_Click);
-            // 
-            // Compras
+            // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GrayText;
+            this.BackColor = System.Drawing.Color.Maroon;
             this.ClientSize = new System.Drawing.Size(885, 523);
-            this.Controls.Add(this.btnFinalizarCompra);
+            this.Controls.Add(this.btnFinalizarVenta);
             this.Controls.Add(this.detallesGridView1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.Name = "Compras";
+            this.Name = "Ventas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Compras";
+            this.Text = "Ventas";
+            ((System.ComponentModel.ISupportInitialize)(this.detallesGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.detallesGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private System.Windows.Forms.Button btnFinalizarVenta;
+        private System.Windows.Forms.DataGridView detallesGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnAgregdarDetalle;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtTotalDetalle;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbProducto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodigoProducto;
-        private System.Windows.Forms.Button btnAgregdarDetalle;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtTotalDetalle;
-        private System.Windows.Forms.DataGridView detallesGridView1;
-        private System.Windows.Forms.Button btnFinalizarCompra;
     }
 }

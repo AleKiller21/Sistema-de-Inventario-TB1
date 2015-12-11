@@ -47268,7 +47268,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[27])).Parameters.Add(param);
             this._commandCollection[28] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[28])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[28])).CommandText = "\"ALEJANDRO\".\"SP_FACTURAS_CREATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[28])).CommandText = "\"ALEJANDRO\".\"SP_FACTURAS_DELETE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[28])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PNUMERO";
@@ -47278,17 +47278,9 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[28])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PCLIENTES_ID";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
-            param.Size = 4;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[28])).Parameters.Add(param);
             this._commandCollection[29] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[29])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[29])).CommandText = "\"ALEJANDRO\".\"SP_FACTURAS_DELETE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[29])).CommandText = "\"ALEJANDRO\".\"SP_FACTURAS_READ\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[29])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PNUMERO";
@@ -47300,7 +47292,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[29])).Parameters.Add(param);
             this._commandCollection[30] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[30])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[30])).CommandText = "\"ALEJANDRO\".\"SP_FACTURAS_READ\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[30])).CommandText = "\"ALEJANDRO\".\"SP_FACTURAS_UPDATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[30])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PNUMERO";
@@ -47310,18 +47302,6 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[30])).Parameters.Add(param);
-            this._commandCollection[31] = new global::IBM.Data.DB2.DB2Command();
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[31])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[31])).CommandText = "\"ALEJANDRO\".\"SP_FACTURAS_UPDATE\"";
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[31])).CommandType = global::System.Data.CommandType.StoredProcedure;
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PNUMERO";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
-            param.Size = 4;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[31])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PDESCUENTO";
             param.DbType = global::System.Data.DbType.Double;
@@ -47329,9 +47309,35 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.Size = 8;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[31])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[30])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PUSUARIO_ACTUALIZACION";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[30])).Parameters.Add(param);
+            this._commandCollection[31] = new global::IBM.Data.DB2.DB2Command();
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[31])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[31])).CommandText = "\"ALEJANDRO\".\"SP_MARCAS_CREATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[31])).CommandType = global::System.Data.CommandType.StoredProcedure;
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[31])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PNOMBRE";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[31])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PUSUARIO_CREACION";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 50;
             param.IsNullable = true;
@@ -47339,7 +47345,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[31])).Parameters.Add(param);
             this._commandCollection[32] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[32])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[32])).CommandText = "\"ALEJANDRO\".\"SP_MARCAS_CREATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[32])).CommandText = "\"ALEJANDRO\".\"SP_MARCAS_DELETE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[32])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47349,23 +47355,9 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[32])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PNOMBRE";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 50;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[32])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PUSUARIO_CREACION";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 50;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[32])).Parameters.Add(param);
             this._commandCollection[33] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[33])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[33])).CommandText = "\"ALEJANDRO\".\"SP_MARCAS_DELETE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[33])).CommandText = "\"ALEJANDRO\".\"SP_MARCAS_READ\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[33])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47377,7 +47369,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[33])).Parameters.Add(param);
             this._commandCollection[34] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[34])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[34])).CommandText = "\"ALEJANDRO\".\"SP_MARCAS_READ\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[34])).CommandText = "\"ALEJANDRO\".\"SP_MARCAS_UPDATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[34])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47387,9 +47379,23 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[34])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PNOMBRE";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[34])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PUSUARIO_ACTUALIZACION";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[34])).Parameters.Add(param);
             this._commandCollection[35] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[35])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[35])).CommandText = "\"ALEJANDRO\".\"SP_MARCAS_UPDATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[35])).CommandText = "\"ALEJANDRO\".\"SP_PRIVILEGIOS_CREATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[35])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47407,7 +47413,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[35])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PUSUARIO_ACTUALIZACION";
+            param.ParameterName = "PUSUARIO_CREACION";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 50;
             param.IsNullable = true;
@@ -47415,7 +47421,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[35])).Parameters.Add(param);
             this._commandCollection[36] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[36])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[36])).CommandText = "\"ALEJANDRO\".\"SP_PRIVILEGIOS_CREATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[36])).CommandText = "\"ALEJANDRO\".\"SP_PRIVILEGIOS_DELETE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[36])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47425,23 +47431,9 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[36])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PNOMBRE";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 50;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[36])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PUSUARIO_CREACION";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 50;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[36])).Parameters.Add(param);
             this._commandCollection[37] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[37])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[37])).CommandText = "\"ALEJANDRO\".\"SP_PRIVILEGIOS_DELETE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[37])).CommandText = "\"ALEJANDRO\".\"SP_PRIVILEGIOS_READ\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[37])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47453,7 +47445,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[37])).Parameters.Add(param);
             this._commandCollection[38] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[38])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[38])).CommandText = "\"ALEJANDRO\".\"SP_PRIVILEGIOS_READ\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[38])).CommandText = "\"ALEJANDRO\".\"SP_PRIVILEGIOS_UPDATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[38])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47463,12 +47455,34 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[38])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PNOMBRE";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[38])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PUSUARIO_ACTUALIZACION";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[38])).Parameters.Add(param);
             this._commandCollection[39] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).CommandText = "\"ALEJANDRO\".\"SP_PRIVILEGIOS_UPDATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).CommandText = "\"ALEJANDRO\".\"SP_PRODUCTOS_CREATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PID";
+            param.ParameterName = "PCODIGO";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PMARCAS_ID";
             param.DbType = global::System.Data.DbType.Int32;
             param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
             param.Size = 4;
@@ -47478,20 +47492,74 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PNOMBRE";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 50;
+            param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PUSUARIO_ACTUALIZACION";
+            param.ParameterName = "PCOSTO";
+            param.DbType = global::System.Data.DbType.Double;
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Double;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PCATEGORIA";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 50;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PEXISTENCIA";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PPRECIO";
+            param.DbType = global::System.Data.DbType.Double;
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Double;
+            param.Size = 8;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PESTADO";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Char;
+            param.Size = 1;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PEXISTENCIA_MINIMA";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PEXISTENCIA_MAXIMA";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PUSUARIO_CREACION";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[39])).Parameters.Add(param);
             this._commandCollection[40] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).CommandText = "\"ALEJANDRO\".\"SP_PRODUCTOS_CREATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).CommandText = "\"ALEJANDRO\".\"SP_PRODUCTOS_DELETE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PCODIGO";
@@ -47501,85 +47569,9 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PMARCAS_ID";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
-            param.Size = 4;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PNOMBRE";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 100;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PCOSTO";
-            param.DbType = global::System.Data.DbType.Double;
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Double;
-            param.Size = 8;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PCATEGORIA";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 100;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PEXISTENCIA";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
-            param.Size = 4;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PPRECIO";
-            param.DbType = global::System.Data.DbType.Double;
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Double;
-            param.Size = 8;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PESTADO";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Char;
-            param.Size = 1;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PEXISTENCIA_MINIMA";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
-            param.Size = 4;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PEXISTENCIA_MAXIMA";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
-            param.Size = 4;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PUSUARIO_CREACION";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 100;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[40])).Parameters.Add(param);
             this._commandCollection[41] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[41])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[41])).CommandText = "\"ALEJANDRO\".\"SP_PRODUCTOS_DELETE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[41])).CommandText = "\"ALEJANDRO\".\"SP_PRODUCTOS_READ\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[41])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PCODIGO";
@@ -47591,7 +47583,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[41])).Parameters.Add(param);
             this._commandCollection[42] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).CommandText = "\"ALEJANDRO\".\"SP_PRODUCTOS_READ\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).CommandText = "\"ALEJANDRO\".\"SP_PRODUCTOS_UPDATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PCODIGO";
@@ -47601,25 +47593,13 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).Parameters.Add(param);
-            this._commandCollection[43] = new global::IBM.Data.DB2.DB2Command();
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).CommandText = "\"ALEJANDRO\".\"SP_PRODUCTOS_UPDATE\"";
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).CommandType = global::System.Data.CommandType.StoredProcedure;
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PCODIGO";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
-            param.Size = 4;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PNOMBRE";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PCOSTO";
             param.DbType = global::System.Data.DbType.Double;
@@ -47627,14 +47607,14 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.Size = 8;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PCATEGORIA";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PEXISTENCIA";
             param.DbType = global::System.Data.DbType.Int32;
@@ -47642,7 +47622,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.Size = 4;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PPRECIO";
             param.DbType = global::System.Data.DbType.Double;
@@ -47650,14 +47630,14 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.Size = 8;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PESTADO";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.Char;
             param.Size = 1;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PEXISTENCIA_MINIMA";
             param.DbType = global::System.Data.DbType.Int32;
@@ -47665,7 +47645,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.Size = 4;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PEXISTENCIA_MAXIMA";
             param.DbType = global::System.Data.DbType.Int32;
@@ -47673,20 +47653,40 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.Size = 4;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PUSUARIO_ACTUALIZACION";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[42])).Parameters.Add(param);
+            this._commandCollection[43] = new global::IBM.Data.DB2.DB2Command();
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDOR_TELEFONOS\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).CommandType = global::System.Data.CommandType.StoredProcedure;
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PTELEFONS";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PPROVEEDORES_CODIGO";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[43])).Parameters.Add(param);
             this._commandCollection[44] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[44])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[44])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDOR_TELEFONOS\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[44])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDOR_TELEFONOS_CREATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[44])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PTELEFONS";
+            param.ParameterName = "PTELEFONOS";
             param.DbType = global::System.Data.DbType.Int32;
             param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
             param.Size = 4;
@@ -47703,7 +47703,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[44])).Parameters.Add(param);
             this._commandCollection[45] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[45])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[45])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDOR_TELEFONOS_CREATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[45])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDOR_TELEFONOS_READ\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[45])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PTELEFONOS";
@@ -47723,7 +47723,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[45])).Parameters.Add(param);
             this._commandCollection[46] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[46])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[46])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDOR_TELEFONOS_READ\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[46])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDOR_TELEFONOS_UPDATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[46])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PTELEFONOS";
@@ -47743,10 +47743,10 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[46])).Parameters.Add(param);
             this._commandCollection[47] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[47])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[47])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDOR_TELEFONOS_UPDATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[47])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDORES_CREATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[47])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PTELEFONOS";
+            param.ParameterName = "PCODIGO";
             param.DbType = global::System.Data.DbType.Int32;
             param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
             param.Size = 4;
@@ -47754,7 +47754,42 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[47])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PPROVEEDORES_CODIGO";
+            param.ParameterName = "PNOMBRE";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[47])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PDIRECCION";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 256;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[47])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PESTADO";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Char;
+            param.Size = 1;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[47])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PCONTACTO_PRINCIPAL";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[47])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PUSUARIO_CREACION";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[47])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PTELEFONO";
             param.DbType = global::System.Data.DbType.Int32;
             param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
             param.Size = 4;
@@ -47763,7 +47798,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[47])).Parameters.Add(param);
             this._commandCollection[48] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[48])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[48])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDORES_CREATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[48])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDORES_DELETE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[48])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PCODIGO";
@@ -47773,52 +47808,9 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[48])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PNOMBRE";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 100;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[48])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PDIRECCION";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 256;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[48])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PESTADO";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Char;
-            param.Size = 1;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[48])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PCONTACTO_PRINCIPAL";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 100;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[48])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PUSUARIO_CREACION";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 50;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[48])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PTELEFONO";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
-            param.Size = 4;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[48])).Parameters.Add(param);
             this._commandCollection[49] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[49])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[49])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDORES_DELETE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[49])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDORES_READ\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[49])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PCODIGO";
@@ -47830,7 +47822,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[49])).Parameters.Add(param);
             this._commandCollection[50] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[50])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[50])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDORES_READ\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[50])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDORES_UPDATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[50])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PCODIGO";
@@ -47840,46 +47832,34 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[50])).Parameters.Add(param);
-            this._commandCollection[51] = new global::IBM.Data.DB2.DB2Command();
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).CommandText = "\"ALEJANDRO\".\"SP_PROVEEDORES_UPDATE\"";
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).CommandType = global::System.Data.CommandType.StoredProcedure;
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PCODIGO";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
-            param.Size = 4;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PNOMBRE";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[50])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PDIRECCION";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 256;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[50])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PESTADO";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.Char;
             param.Size = 1;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[50])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PCONTACTO_PRINCIPAL";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[50])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PUSUARIO_ACTUALIZACION";
             param.DbType = global::System.Data.DbType.Date;
@@ -47887,25 +47867,51 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.Size = 4;
             param.IsNullable = true;
             param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).Parameters.Add(param);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[50])).Parameters.Add(param);
+            this._commandCollection[51] = new global::IBM.Data.DB2.DB2Command();
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).CommandText = "\"ALEJANDRO\".\"SP_REPORTE_EXISTENCIA_PRODUCTO\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[51])).CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[52] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[52])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[52])).CommandText = "\"ALEJANDRO\".\"SP_REPORTE_EXISTENCIA_PRODUCTO\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[52])).CommandText = "\"ALEJANDRO\".\"SP_REPORTE_EXISTENCIA_PRODUCTO_CATEGORIA\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[52])).CommandType = global::System.Data.CommandType.StoredProcedure;
-            this._commandCollection[53] = new global::IBM.Data.DB2.DB2Command();
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[53])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[53])).CommandText = "\"ALEJANDRO\".\"SP_REPORTE_EXISTENCIA_PRODUCTO_CATEGORIA\"";
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[53])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PCATEGORIA";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 100;
             param.IsNullable = true;
             param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[52])).Parameters.Add(param);
+            this._commandCollection[53] = new global::IBM.Data.DB2.DB2Command();
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[53])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[53])).CommandText = "\"ALEJANDRO\".\"SP_ROLES_CREATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[53])).CommandType = global::System.Data.CommandType.StoredProcedure;
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
+            param.Size = 4;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[53])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PNOMBRE";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[53])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PUSUARIO_CREACION";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[53])).Parameters.Add(param);
             this._commandCollection[54] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[54])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[54])).CommandText = "\"ALEJANDRO\".\"SP_ROLES_CREATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[54])).CommandText = "\"ALEJANDRO\".\"SP_ROLES_DELETE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[54])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47915,23 +47921,9 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[54])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PNOMBRE";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 100;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[54])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PUSUARIO_CREACION";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 50;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[54])).Parameters.Add(param);
             this._commandCollection[55] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[55])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[55])).CommandText = "\"ALEJANDRO\".\"SP_ROLES_DELETE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[55])).CommandText = "\"ALEJANDRO\".\"SP_ROLES_READ\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[55])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47943,7 +47935,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[55])).Parameters.Add(param);
             this._commandCollection[56] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[56])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[56])).CommandText = "\"ALEJANDRO\".\"SP_ROLES_READ\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[56])).CommandText = "\"ALEJANDRO\".\"SP_ROLES_UPDATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[56])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47953,9 +47945,23 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[56])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PNOMBRE";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[56])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PUSUARIO_ACTUALIZACION";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[56])).Parameters.Add(param);
             this._commandCollection[57] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[57])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[57])).CommandText = "\"ALEJANDRO\".\"SP_ROLES_UPDATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[57])).CommandText = "\"ALEJANDRO\".\"SP_USUARIOS_CREATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[57])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47966,6 +47972,13 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[57])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PCLAVE";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 20;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[57])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PNOMBRE";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 100;
@@ -47973,7 +47986,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[57])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PUSUARIO_ACTUALIZACION";
+            param.ParameterName = "PUSUARIO_CREACION";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 50;
             param.IsNullable = true;
@@ -47981,7 +47994,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[57])).Parameters.Add(param);
             this._commandCollection[58] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[58])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[58])).CommandText = "\"ALEJANDRO\".\"SP_USUARIOS_CREATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[58])).CommandText = "\"ALEJANDRO\".\"SP_USUARIOS_DELETE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[58])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -47991,30 +48004,9 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[58])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PCLAVE";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 20;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[58])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PNOMBRE";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 100;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[58])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PUSUARIO_CREACION";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 50;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[58])).Parameters.Add(param);
             this._commandCollection[59] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[59])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[59])).CommandText = "\"ALEJANDRO\".\"SP_USUARIOS_DELETE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[59])).CommandText = "\"ALEJANDRO\".\"SP_USUARIOS_READ\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[59])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -48026,7 +48018,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[59])).Parameters.Add(param);
             this._commandCollection[60] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[60])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[60])).CommandText = "\"ALEJANDRO\".\"SP_USUARIOS_READ\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[60])).CommandText = "\"ALEJANDRO\".\"SP_USUARIOS_UPDATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[60])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
             param.ParameterName = "PID";
@@ -48036,12 +48028,33 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[60])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PCLAVE";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 20;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[60])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PNOMBRE";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 100;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[60])).Parameters.Add(param);
+            param = new global::IBM.Data.DB2.DB2Parameter();
+            param.ParameterName = "PUSUARIO_ACTUALIZACION";
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
+            param.Size = 50;
+            param.IsNullable = true;
+            param.SourceColumn = null;
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[60])).Parameters.Add(param);
             this._commandCollection[61] = new global::IBM.Data.DB2.DB2Command();
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[61])).Connection = new global::IBM.Data.DB2.DB2Connection(global::SistemaInventario2.Properties.Settings.Default.PROYECTOConnectionString);
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[61])).CommandText = "\"ALEJANDRO\".\"SP_USUARIOS_UPDATE\"";
+            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[61])).CommandText = "\"ALEJANDRO\".\"SP_FACTURAS_CREATE\"";
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[61])).CommandType = global::System.Data.CommandType.StoredProcedure;
             param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PID";
+            param.ParameterName = "PNUMERO";
             param.DbType = global::System.Data.DbType.Int32;
             param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
             param.Size = 4;
@@ -48049,21 +48062,15 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[61])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PCLAVE";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 20;
+            param.ParameterName = "PCLIENTES_ID";
+            param.DbType = global::System.Data.DbType.Int32;
+            param.DB2Type = global::IBM.Data.DB2.DB2Type.Integer;
+            param.Size = 4;
             param.IsNullable = true;
             param.SourceColumn = null;
             ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[61])).Parameters.Add(param);
             param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PNOMBRE";
-            param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
-            param.Size = 100;
-            param.IsNullable = true;
-            param.SourceColumn = null;
-            ((global::IBM.Data.DB2.DB2Command)(this._commandCollection[61])).Parameters.Add(param);
-            param = new global::IBM.Data.DB2.DB2Parameter();
-            param.ParameterName = "PUSUARIO_ACTUALIZACION";
+            param.ParameterName = "PUSUARIO_CREACION";
             param.DB2Type = global::IBM.Data.DB2.DB2Type.VarChar;
             param.Size = 50;
             param.IsNullable = true;
@@ -49188,42 +49195,8 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int SP_FACTURAS_CREATE(global::System.Nullable<int> PNUMERO, global::System.Nullable<int> PCLIENTES_ID) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[28]));
-            if ((PNUMERO.HasValue == true)) {
-                command.Parameters[0].Value = ((int)(PNUMERO.Value));
-            }
-            else {
-                command.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            if ((PCLIENTES_ID.HasValue == true)) {
-                command.Parameters[1].Value = ((int)(PCLIENTES_ID.Value));
-            }
-            else {
-                command.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_FACTURAS_DELETE(global::System.Nullable<int> PNUMERO) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[29]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[28]));
             if ((PNUMERO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PNUMERO.Value));
             }
@@ -49251,7 +49224,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_FACTURAS_READ(global::System.Nullable<int> PNUMERO) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[30]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[29]));
             if ((PNUMERO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PNUMERO.Value));
             }
@@ -49279,7 +49252,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_FACTURAS_UPDATE(global::System.Nullable<int> PNUMERO, global::System.Nullable<double> PDESCUENTO, string PUSUARIO_ACTUALIZACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[31]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[30]));
             if ((PNUMERO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PNUMERO.Value));
             }
@@ -49319,7 +49292,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_MARCAS_CREATE(global::System.Nullable<int> PID, string PNOMBRE, string PUSUARIO_CREACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[32]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[31]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -49359,7 +49332,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_MARCAS_DELETE(global::System.Nullable<int> PID) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[33]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[32]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -49387,7 +49360,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_MARCAS_READ(global::System.Nullable<int> PID) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[34]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[33]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -49415,7 +49388,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_MARCAS_UPDATE(global::System.Nullable<int> PID, string PNOMBRE, string PUSUARIO_ACTUALIZACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[35]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[34]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -49455,7 +49428,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PRIVILEGIOS_CREATE(global::System.Nullable<int> PID, string PNOMBRE, string PUSUARIO_CREACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[36]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[35]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -49495,7 +49468,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PRIVILEGIOS_DELETE(global::System.Nullable<int> PID) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[37]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[36]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -49523,7 +49496,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PRIVILEGIOS_READ(global::System.Nullable<int> PID) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[38]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[37]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -49551,7 +49524,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PRIVILEGIOS_UPDATE(global::System.Nullable<int> PID, string PNOMBRE, string PUSUARIO_ACTUALIZACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[39]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[38]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -49591,7 +49564,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PRODUCTOS_CREATE(global::System.Nullable<int> PCODIGO, global::System.Nullable<int> PMARCAS_ID, string PNOMBRE, global::System.Nullable<double> PCOSTO, string PCATEGORIA, global::System.Nullable<int> PEXISTENCIA, global::System.Nullable<double> PPRECIO, string PESTADO, global::System.Nullable<int> PEXISTENCIA_MINIMA, global::System.Nullable<int> PEXISTENCIA_MAXIMA, string PUSUARIO_CREACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[40]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[39]));
             if ((PCODIGO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PCODIGO.Value));
             }
@@ -49679,7 +49652,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PRODUCTOS_DELETE(global::System.Nullable<int> PCODIGO) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[41]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[40]));
             if ((PCODIGO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PCODIGO.Value));
             }
@@ -49707,7 +49680,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PRODUCTOS_READ(global::System.Nullable<int> PCODIGO) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[42]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[41]));
             if ((PCODIGO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PCODIGO.Value));
             }
@@ -49735,7 +49708,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PRODUCTOS_UPDATE(global::System.Nullable<int> PCODIGO, string PNOMBRE, global::System.Nullable<double> PCOSTO, string PCATEGORIA, global::System.Nullable<int> PEXISTENCIA, global::System.Nullable<double> PPRECIO, string PESTADO, global::System.Nullable<int> PEXISTENCIA_MINIMA, global::System.Nullable<int> PEXISTENCIA_MAXIMA, string PUSUARIO_ACTUALIZACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[43]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[42]));
             if ((PCODIGO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PCODIGO.Value));
             }
@@ -49817,7 +49790,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PROVEEDOR_TELEFONOS(global::System.Nullable<int> PTELEFONS, global::System.Nullable<int> PPROVEEDORES_CODIGO) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[44]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[43]));
             if ((PTELEFONS.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PTELEFONS.Value));
             }
@@ -49851,7 +49824,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PROVEEDOR_TELEFONOS_CREATE(global::System.Nullable<int> PTELEFONOS, global::System.Nullable<int> PPROVEEDORES_CODIGO) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[45]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[44]));
             if ((PTELEFONOS.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PTELEFONOS.Value));
             }
@@ -49885,7 +49858,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PROVEEDOR_TELEFONOS_READ(global::System.Nullable<int> PTELEFONOS, global::System.Nullable<int> PPROVEEDORES_CODIGO) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[46]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[45]));
             if ((PTELEFONOS.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PTELEFONOS.Value));
             }
@@ -49919,7 +49892,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PROVEEDOR_TELEFONOS_UPDATE(global::System.Nullable<int> PTELEFONOS, global::System.Nullable<int> PPROVEEDORES_CODIGO) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[47]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[46]));
             if ((PTELEFONOS.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PTELEFONOS.Value));
             }
@@ -49953,7 +49926,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PROVEEDORES_CREATE(global::System.Nullable<int> PCODIGO, string PNOMBRE, string PDIRECCION, string PESTADO, string PCONTACTO_PRINCIPAL, string PUSUARIO_CREACION, global::System.Nullable<int> PTELEFONO) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[48]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[47]));
             if ((PCODIGO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PCODIGO.Value));
             }
@@ -50017,7 +49990,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PROVEEDORES_DELETE(global::System.Nullable<int> PCODIGO) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[49]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[48]));
             if ((PCODIGO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PCODIGO.Value));
             }
@@ -50045,7 +50018,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PROVEEDORES_READ(global::System.Nullable<int> PCODIGO) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[50]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[49]));
             if ((PCODIGO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PCODIGO.Value));
             }
@@ -50073,7 +50046,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_PROVEEDORES_UPDATE(global::System.Nullable<int> PCODIGO, string PNOMBRE, string PDIRECCION, string PESTADO, string PCONTACTO_PRINCIPAL, global::System.Nullable<global::System.DateTime> PUSUARIO_ACTUALIZACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[51]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[50]));
             if ((PCODIGO.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PCODIGO.Value));
             }
@@ -50131,7 +50104,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_REPORTE_EXISTENCIA_PRODUCTO() {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[52]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[51]));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -50153,7 +50126,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_REPORTE_EXISTENCIA_PRODUCTO_CATEGORIA(string PCATEGORIA) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[53]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[52]));
             if ((PCATEGORIA == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -50181,7 +50154,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_ROLES_CREATE(global::System.Nullable<int> PID, string PNOMBRE, string PUSUARIO_CREACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[54]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[53]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -50221,7 +50194,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_ROLES_DELETE(global::System.Nullable<int> PID) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[55]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[54]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -50249,7 +50222,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_ROLES_READ(global::System.Nullable<int> PID) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[56]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[55]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -50277,7 +50250,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_ROLES_UPDATE(global::System.Nullable<int> PID, string PNOMBRE, string PUSUARIO_ACTUALIZACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[57]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[56]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -50317,7 +50290,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_USUARIOS_CREATE(global::System.Nullable<int> PID, string PCLAVE, string PNOMBRE, string PUSUARIO_CREACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[58]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[57]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -50363,7 +50336,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_USUARIOS_DELETE(global::System.Nullable<int> PID) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[59]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[58]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -50391,7 +50364,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_USUARIOS_READ(global::System.Nullable<int> PID) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[60]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[59]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -50419,7 +50392,7 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int SP_USUARIOS_UPDATE(global::System.Nullable<int> PID, string PCLAVE, string PNOMBRE, string PUSUARIO_ACTUALIZACION) {
-            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[61]));
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[60]));
             if ((PID.HasValue == true)) {
                 command.Parameters[0].Value = ((int)(PID.Value));
             }
@@ -50443,6 +50416,46 @@ namespace SistemaInventario2.DB2DataSetTableAdapters {
             }
             else {
                 command.Parameters[3].Value = ((string)(PUSUARIO_ACTUALIZACION));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int SP_FACTURAS_CREATE(global::System.Nullable<int> PNUMERO, global::System.Nullable<int> PCLIENTES_ID, string PUSUARIO_CREACION) {
+            global::IBM.Data.DB2.DB2Command command = ((global::IBM.Data.DB2.DB2Command)(this.CommandCollection[61]));
+            if ((PNUMERO.HasValue == true)) {
+                command.Parameters[0].Value = ((int)(PNUMERO.Value));
+            }
+            else {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((PCLIENTES_ID.HasValue == true)) {
+                command.Parameters[1].Value = ((int)(PCLIENTES_ID.Value));
+            }
+            else {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((PUSUARIO_CREACION == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(PUSUARIO_CREACION));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 

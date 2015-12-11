@@ -90,5 +90,11 @@ namespace SistemaInventario2
         {
             temp.Close();
         }
+
+        private void realizarVentaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NuevaVenta nVenta = new NuevaVenta();
+            nVenta.Show();
+        }
     }
 }

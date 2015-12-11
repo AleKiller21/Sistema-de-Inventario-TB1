@@ -113,6 +113,18 @@
     <Compile Include="NuevaCompra.Designer.cs">
       <DependentUpon>NuevaCompra.cs</DependentUpon>
     </Compile>
+    <Compile Include="NuevaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaVenta.Designer.cs">
+      <DependentUpon>NuevaVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoCliente.Designer.cs">
+      <DependentUpon>NuevoCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tables\AjustesTable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +214,12 @@
     <Compile Include="Tables\ProveedoresTable.Designer.cs">
       <DependentUpon>ProveedoresTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Busquedas\AjusteBusqueda.resx">
       <DependentUpon>AjusteBusqueda.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,6 +252,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NuevaCompra.resx">
       <DependentUpon>NuevaCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaVenta.resx">
+      <DependentUpon>NuevaVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoCliente.resx">
+      <DependentUpon>NuevoCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tables\AjustesTable.resx">
       <DependentUpon>AjustesTable.cs</DependentUpon>
@@ -282,6 +306,9 @@
     </Compile>
     <EmbeddedResource Include="Tables\ProveedoresTable.resx">
       <DependentUpon>ProveedoresTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DB2DataSet.xsc">
       <DependentUpon>DB2DataSet.xsd</DependentUpon>

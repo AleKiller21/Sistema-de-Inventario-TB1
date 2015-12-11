@@ -40,7 +40,6 @@
             this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
             this.ingresarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.agregarNuevoClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripDropDownButton5 = new System.Windows.Forms.ToolStripDropDownButton();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.otrosRegistrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -144,8 +143,7 @@
             this.toolStripDropDownButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripDropDownButton3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresarToolStripMenuItem,
-            this.realizarVentaToolStripMenuItem,
-            this.agregarNuevoClienteToolStripMenuItem});
+            this.realizarVentaToolStripMenuItem});
             this.toolStripDropDownButton3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripDropDownButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton3.Image")));
             this.toolStripDropDownButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -166,12 +164,7 @@
             this.realizarVentaToolStripMenuItem.Name = "realizarVentaToolStripMenuItem";
             this.realizarVentaToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
             this.realizarVentaToolStripMenuItem.Text = "Realizar venta";
-            // 
-            // agregarNuevoClienteToolStripMenuItem
-            // 
-            this.agregarNuevoClienteToolStripMenuItem.Name = "agregarNuevoClienteToolStripMenuItem";
-            this.agregarNuevoClienteToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
-            this.agregarNuevoClienteToolStripMenuItem.Text = "Agregar nuevo cliente";
+            this.realizarVentaToolStripMenuItem.Click += new System.EventHandler(this.realizarVentaToolStripMenuItem_Click);
             // 
             // toolStripDropDownButton5
             // 
@@ -372,6 +365,5 @@
         private System.Windows.Forms.ToolStripMenuItem proveedoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem realizarVentaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem agregarNuevoClienteToolStripMenuItem;
     }
 }

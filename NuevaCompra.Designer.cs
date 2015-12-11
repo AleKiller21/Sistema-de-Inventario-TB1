@@ -65,6 +65,7 @@
             // btnCrear
             // 
             this.btnCrear.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnCrear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
