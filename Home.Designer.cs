@@ -35,8 +35,6 @@
             this.cerrarSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
             this.ajustesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.entradaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripDropDownButton3 = new System.Windows.Forms.ToolStripDropDownButton();
             this.ingresarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.realizarVentaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -118,24 +116,10 @@
             // 
             // ajustesToolStripMenuItem
             // 
-            this.ajustesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.entradaToolStripMenuItem,
-            this.salidaToolStripMenuItem});
             this.ajustesToolStripMenuItem.Name = "ajustesToolStripMenuItem";
-            this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.ajustesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.ajustesToolStripMenuItem.Text = "Ajustes";
-            // 
-            // entradaToolStripMenuItem
-            // 
-            this.entradaToolStripMenuItem.Name = "entradaToolStripMenuItem";
-            this.entradaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-            this.entradaToolStripMenuItem.Text = "Entrada";
-            // 
-            // salidaToolStripMenuItem
-            // 
-            this.salidaToolStripMenuItem.Name = "salidaToolStripMenuItem";
-            this.salidaToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
-            this.salidaToolStripMenuItem.Text = "Salida";
+            this.ajustesToolStripMenuItem.Click += new System.EventHandler(this.ajustesToolStripMenuItem_Click);
             // 
             // toolStripDropDownButton3
             // 
@@ -155,14 +139,14 @@
             // ingresarToolStripMenuItem
             // 
             this.ingresarToolStripMenuItem.Name = "ingresarToolStripMenuItem";
-            this.ingresarToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.ingresarToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.ingresarToolStripMenuItem.Text = "Realizar compra";
             this.ingresarToolStripMenuItem.Click += new System.EventHandler(this.ingresarToolStripMenuItem_Click);
             // 
             // realizarVentaToolStripMenuItem
             // 
             this.realizarVentaToolStripMenuItem.Name = "realizarVentaToolStripMenuItem";
-            this.realizarVentaToolStripMenuItem.Size = new System.Drawing.Size(210, 22);
+            this.realizarVentaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.realizarVentaToolStripMenuItem.Text = "Realizar venta";
             this.realizarVentaToolStripMenuItem.Click += new System.EventHandler(this.realizarVentaToolStripMenuItem_Click);
             // 
@@ -343,8 +327,6 @@
         private System.Windows.Forms.ToolStripMenuItem cerrarSistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
         private System.Windows.Forms.ToolStripMenuItem ajustesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem entradaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salidaToolStripMenuItem;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton3;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton5;
         private System.Windows.Forms.ToolStripButton toolStripLabel1;

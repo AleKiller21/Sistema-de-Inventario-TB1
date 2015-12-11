@@ -96,5 +96,11 @@ namespace SistemaInventario2
             NuevaVenta nVenta = new NuevaVenta();
             nVenta.Show();
         }
+
+        private void ajustesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NuevoAjuste nAjuste = new NuevoAjuste();
+            nAjuste.Show();
+        }
     }
 }

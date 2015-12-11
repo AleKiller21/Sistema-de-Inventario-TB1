@@ -46,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ActiveUser.cs" />
+    <Compile Include="Ajustes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajustes.Designer.cs">
+      <DependentUpon>Ajustes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Busquedas\AjusteBusqueda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,12 @@
     </Compile>
     <Compile Include="NuevaVenta.Designer.cs">
       <DependentUpon>NuevaVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevoAjuste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoAjuste.Designer.cs">
+      <DependentUpon>NuevoAjuste.cs</DependentUpon>
     </Compile>
     <Compile Include="NuevoCliente.cs">
       <SubType>Form</SubType>
@@ -220,6 +232,9 @@
     <Compile Include="Ventas.Designer.cs">
       <DependentUpon>Ventas.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ajustes.resx">
+      <DependentUpon>Ajustes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Busquedas\AjusteBusqueda.resx">
       <DependentUpon>AjusteBusqueda.cs</DependentUpon>
     </EmbeddedResource>
@@ -255,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NuevaVenta.resx">
       <DependentUpon>NuevaVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoAjuste.resx">
+      <DependentUpon>NuevoAjuste.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoCliente.resx">
       <DependentUpon>NuevoCliente.cs</DependentUpon>
