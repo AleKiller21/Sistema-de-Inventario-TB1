@@ -93,12 +93,14 @@
             this.holaToolStripMenuItem.Name = "holaToolStripMenuItem";
             this.holaToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.holaToolStripMenuItem.Text = "Cerrar Sesion";
+            this.holaToolStripMenuItem.Click += new System.EventHandler(this.holaToolStripMenuItem_Click);
             // 
             // cerrarSistemaToolStripMenuItem
             // 
             this.cerrarSistemaToolStripMenuItem.Name = "cerrarSistemaToolStripMenuItem";
             this.cerrarSistemaToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.cerrarSistemaToolStripMenuItem.Text = "Cerrar Sistema";
+            this.cerrarSistemaToolStripMenuItem.Click += new System.EventHandler(this.cerrarSistemaToolStripMenuItem_Click);
             // 
             // toolStripDropDownButton2
             // 
@@ -264,6 +266,7 @@
             this.toolStripLabel1.Name = "toolStripLabel1";
             this.toolStripLabel1.Size = new System.Drawing.Size(153, 22);
             this.toolStripLabel1.Text = "Resumen de Inventario";
+            this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
             // toolStripDropDownButton6
             // 

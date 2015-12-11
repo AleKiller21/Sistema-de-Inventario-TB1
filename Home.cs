@@ -88,7 +88,10 @@ namespace SistemaInventario2
 
         private void Home_FormClosed(object sender, FormClosedEventArgs e)
         {
-            temp.Close();
+            if(temp != null)
+            {
+                temp.Close();
+            }
         }
 
         private void realizarVentaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,6 +104,25 @@ namespace SistemaInventario2
         {
             NuevoAjuste nAjuste = new NuevoAjuste();
             nAjuste.Show();
+        }
+
+        private void holaToolStripMenuItem_Click(object sender, EventArgs e)//Boton de cerrar sesion
+        {
+            ActiveUser.UserID = null;
+            ActiveUser.Password = null;
+            temp.Show();
+            temp = null;
+            this.Close();
+        }
+
+        private void cerrarSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)//Boton de Resumen de Inventario
+        {
+
         }
     }
 }

@@ -28,7 +28,7 @@ namespace SistemaInventario2
             {
                 if(row["NOMBRE"].ToString() == txtUser.Text && row["CLAVE"].ToString() == txtClave.Text)
                 {
-                    MessageBox.Show("Bienvenido " + txtUser.Text, "Usuario encontrado", MessageBoxButtons.OK,
+                    MessageBox.Show("Bienvenido. " + txtUser.Text, "Usuario encontrado", MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
                     sesion = true;
                     ActiveUser.UserID = row["NOMBRE"].ToString();
@@ -46,7 +46,7 @@ namespace SistemaInventario2
 
             else
             {
-                MessageBox.Show("Tal usuario no existe en la base de datos. Contacte al administrador del sistema", "Error!", MessageBoxButtons.OK,
+                MessageBox.Show("Tal usuario no existe en la base de datos. Contacte al administrador del sistema.", "Error!", MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
         }

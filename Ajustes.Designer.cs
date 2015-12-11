@@ -87,6 +87,7 @@
             this.cmbProductos.Name = "cmbProductos";
             this.cmbProductos.Size = new System.Drawing.Size(121, 23);
             this.cmbProductos.TabIndex = 3;
+            this.cmbProductos.SelectedIndexChanged += new System.EventHandler(this.cmbProductos_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -118,6 +119,7 @@
             this.btnAgregarDetalle.TabIndex = 6;
             this.btnAgregarDetalle.Text = "Agregar a Ajuste";
             this.btnAgregarDetalle.UseVisualStyleBackColor = true;
+            this.btnAgregarDetalle.Click += new System.EventHandler(this.btnAgregarDetalle_Click);
             // 
             // groupBox1
             // 
@@ -160,6 +162,7 @@
             this.btnTerminarAjuste.TabIndex = 7;
             this.btnTerminarAjuste.Text = "Finalizar Ajuste";
             this.btnTerminarAjuste.UseVisualStyleBackColor = false;
+            this.btnTerminarAjuste.Click += new System.EventHandler(this.btnTerminarAjuste_Click);
             // 
             // Ajustes
             // 
